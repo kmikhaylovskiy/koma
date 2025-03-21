@@ -61,7 +61,7 @@ resource "azurerm_linux_virtual_machine" "hiasvm" {
 
   admin_ssh_key {
     username   = "adminuser"
-    public_key = file(".ssh/id_rsa.pub")
+    public_key = file(".ssh/id_rsa.pem.pub")
   }
 
   os_disk {
