@@ -1,4 +1,4 @@
-# We strongly recommend using the required_providers block to set the
+# We strongly recommend using the required_providers block to set theceesds
 # Azure Provider source and version being used
 terraform {
   required_providers {
@@ -98,6 +98,6 @@ resource "azurerm_virtual_network" "kostyanet" {
 resource "azurerm_subnet" "subnet1bykostya" {
   name                 = "subnet1bykostya"
   resource_group_name  = azurerm_resource_group.NUKOMASHIP2.name
-  virtual_network_name = azurerm_virtual_network.hiasnet.name
+  virtual_network_name = azurerm_virtual_network.kostyanet.name
   address_prefixes     = ["10.252.2.0/24"]
   }
